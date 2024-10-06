@@ -219,39 +219,14 @@ adjustForMobile()
     button.BackgroundColor3 = Color3.new(1, 1, 1) -- Set default color to white
     button.Text = ''
     button.Parent = Frame
-    -- Mouse down event to start drawing
-    button.MouseButton1Down:Connect(function()
-        isDrawing = true
+    button.MouseButton1Click:Connect(function()
         if button.BackgroundColor3 == selectedColor then
             button.BackgroundColor3 = Color3.new(1, 1, 1) -- Reset color if clicked again
         else
-            button.BackgroundColor3 = selectedColor -- Change color on click
+            button.BackgroundColor3 = selectedColor
         end
     end)
-
-    -- Mouse enter event to draw while dragging
-    button.MouseEnter:Connect(function()
-        if isDrawing then
-            if button.BackgroundColor3 == selectedColor then
-                button.BackgroundColor3 = Color3.new(1, 1, 1) -- Reset color if dragged over again
-            else
-                button.BackgroundColor3 = selectedColor -- Draw when dragging over
-            end
-        end
-    end)
-
-    -- Mouse up event to stop drawing
-    button.MouseButton1Up:Connect(function()
-        isDrawing = false
-    end)
-
-    -- Detect when mouse button is released anywhere on the screen
-    game:GetService("UserInputService").InputEnded:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            isDrawing = false
-        end
-    end)
-
+    
     return button
 end
 
