@@ -175,7 +175,7 @@ adjustForMobile()
         {Name = "Red", Color = Color3.fromRGB(255, 0, 0)},
         {Name = "Green", Color = Color3.fromRGB(0, 255, 0)},
         {Name = "Yellow", Color = Color3.fromRGB(255, 255, 0)},
-        {Name = "Blue", Color = Color3.fromRGB(0, 170, 255)},
+        {Name = "Blue", Color = Color3.fromRGB(0, 0, 255)},
         {Name = "Purple", Color = Color3.fromRGB(128, 0, 128)},
         {Name = "Brown", Color = Color3.fromRGB(139, 69, 19)},
         {Name = "Orange", Color = Color3.fromRGB(255, 165, 0)},
@@ -254,7 +254,7 @@ end
                     status = status.."📗"
                 elseif button.BackgroundColor3 == Color3.fromRGB(255, 255, 0) then
                     status = status.."📒"
-                elseif button.BackgroundColor3 == Color3.fromRGB(0, 255, 255) then
+                elseif button.BackgroundColor3 == Color3.fromRGB(0, 0, 255) then
                     status = status.."📘"
                 elseif button.BackgroundColor3 == Color3.fromRGB(128, 0, 128) then
                     status = status.."♒️"
@@ -473,7 +473,7 @@ arts.MouseButton1Click:Connect(function()
         [2] = Color3.fromRGB(255, 0, 0), -- Red
         [3] = Color3.fromRGB(0, 255, 0), -- Green
         [4] = Color3.fromRGB(255, 255, 0), -- Yellow
-        [5] = Color3.fromRGB(0, 170, 255), -- Blue
+        [5] = Color3.fromRGB(0, 0, 255), -- Blue
         [6] = Color3.fromRGB(128, 0, 128), -- Purple
         [7] = Color3.fromRGB(139, 69, 19), -- Brown
         [8] = Color3.fromRGB(255, 165, 0), -- Orange
