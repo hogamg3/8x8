@@ -502,6 +502,7 @@ for i, art in pairs(artsList) do
     artButton.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
     artButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     artButton.Text = "Loading..."
+    artButton.TextSize = 25
 
         -- Add image if needed
     if ImageArts[i] then
